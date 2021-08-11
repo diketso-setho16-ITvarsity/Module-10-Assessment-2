@@ -16,7 +16,7 @@ function getRecipeList(){
             for (let i = 0; i < data.length; i++) {
                 output +=   `
                                 <a href="show-recipes.html/?id=${data[i].id}">
-                                    <div class="meals-list-items">
+                                    <div class="meals-list-item">
                                         <h1>
                                             ${data[i].title}
                                             <i class="fas fa-chevron-circle-right"></i>
