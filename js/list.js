@@ -24,15 +24,13 @@ function getRecipeList(){
                                         <p>${data[i].description}</p>
                                     </div>
                                 </a>
-                            `
-                console.log("ID: " + data[i].id);
-                console.log("Title: " + data[i].title);
-                console.log("description: " +data[i].description)              
+                            `              
             }
             document.getElementById("output").innerHTML = output;
     })
 }
 
+//get Category
 function getCategory(){
     var url = window.location.href;
     var pos = url.search("=")
@@ -40,3 +38,4 @@ function getCategory(){
 
     return category;
 }
+

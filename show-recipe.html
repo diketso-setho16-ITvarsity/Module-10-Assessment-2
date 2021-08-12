@@ -2,17 +2,17 @@
 <html>
     <head>
         
-        <title>My Recipe Book | Drinks | strawberryMilkshake</title>
+        <title>My Recipe Book</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="fontawesome/css/all.css">
         <meta charset="UTF_8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body class="body-recipes">  
+    <body class="body-recipes" onload="getRecipe()">  
         
         <div class="header">
-            <a href="index.html">
+            <a href="#" id="back-link">
                 <i class="fas fa-long-arrow-alt-left"></i>
             </a>
 
@@ -20,44 +20,11 @@
         </div>
         
         <div id="recipe">
-            <div class="recipe-details">
-                <img src="images/strawberryMilkshake.png">
-
-                <h1>Grilled Cheese Sandwich</h1>
-
-                <div class="recipe-details-info">
-                    <p><b>Prep time:</b> 10 Mins</p>
-                    <p style="float: right;"><b>Yield:</b> 4</p>
-                </div>
-
-                <div class="recipe-details-ingredients">
-                    <h2>Ingredients</h2>
-
-                    <input type="checkbox" id="check-01">
-                    <label for="check-01">8 ounces strawberries, stemmed and sliced</label>
-                        <br>
-                    <input type="checkbox" id="check-02">
-                    <label for="check-02">&#189; teaspoon vanilla extract</label>
-                        <br>
-                    <input type="checkbox" id="check-03">
-                    <label for="check-03">1 pint vanilla ice cream</label>
-                        <br>
-                    <input type="checkbox" id="check-04">
-                    <label for="check-04">&#188; cup milk</label>
-                        
-                </div>
-
-                <div class="recipe-details-steps">
-                    <h2>Steps</h2>
-
-                    <ol>
-                        <li>Blend half of strawberries, &#188; tsp. vanilla, 1 cup ice cream and 2 Tbsp. milk in blender until smooth.</li>
-                        <li>Pour into 2 glasses. Repeat with remaining strawberries, vanilla, ice cream and milk. Serve immediately.</li>
-                    </ol>
-                </div>
-            </div>
-
-            
+            <div class="recipe-details" id="output">
+                
+            </div>        
         </div>
+
+        <script src="js/show.js"></script>
     </body>
 </html>
